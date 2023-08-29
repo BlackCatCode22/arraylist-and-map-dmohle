@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 // ListPractice.java
@@ -58,7 +59,31 @@ public class ListPractice {
             myFriendNumber++;
         }
 
-        // write a for/each loop to output the list
+        // write a hash map
+        HashMap<String, Integer> charsInString = new HashMap<>();
+
+        charsInString.put("a", 3);
+        charsInString.put("b", 8);
+        charsInString.put("c", 4);
+
+        // Output the hash map...
+        System.out.println("\n The hashmap is: " + charsInString);
+
+        // increment a key
+        System.out.println(charsInString.toString());
+        System.out.println(charsInString.get("a"));
+        int newValue  = charsInString.get("a");
+        // increment the value
+        newValue++;
+        // put the value
+        charsInString.put("a",newValue);
+        System.out.println();
+        System.out.println("\n The hashmap is: " + charsInString);
+
+
+
+
+
 
 
 
